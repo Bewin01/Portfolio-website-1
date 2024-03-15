@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6dddc6ac4.js" crossorigin="anonymous"></script>
+</head>  
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/bewin_portfolio_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-light fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Bewin</span> Marshel <br>and I'm from India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------About----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a recent graduate proficient in Python, I am Bewin, deeply passionate about web development. With expertise in frameworks like Django and Node.js. Through hands-on experience and innovative projects, I've honed my abilities to craft dynamic and efficient web solutions. Whether it's building scalable web applications or designing intuitive user interfaces, I thrive on pushing boundaries and delivering high-quality results. Committed to staying at the forefront of technology, I continuously seek opportunities to expand my knowledge and refine my craft. With a strong foundation in Python and a knack for web development, I am poised to make a meaningful impact in the digital landscape.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Backend development</span><br>Building Complex Applications to Scale</li>
+                        <li><span>UX/UI</span><br>Designing Responsive Websites/Applications</li>
+                        <li><span>Mobile development</span><br>Designing Native Ios/Android Applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Backend development</span><br>Building Complex Applications to Scale</li>
+                        <li><span>UX/UI</span><br>Designing Responsive Websites/Applications</li>
+                        <li><span>Mobile development</span><br>Designing Native Ios/Android Applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Backend </span><br>Building Complex Applications to Scale</li>
+                        <li><span>UX/UI</span><br>Designing Responsive Websites/Applications</li>
+                        <li><span>Mobile development</span><br>Designing Native Ios/Android Applications</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Services----------- -->
+<div id="services">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title-1">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque incidunt accusamus eius praesentium aperiam, debitis atque molestiae id blanditiis inventore quis voluptatum ipsa, voluptates numquam consequuntur sunt nesciunt veniam doloremque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque incidunt accusamus eius praesentium aperiam, debitis atque molestiae id blanditiis inventore quis voluptatum ipsa, voluptates numquam consequuntur sunt nesciunt veniam doloremque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque incidunt accusamus eius praesentium aperiam, debitis atque molestiae id blanditiis inventore quis voluptatum ipsa, voluptates numquam consequuntur sunt nesciunt veniam doloremque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layers">
+                    <h3>Train AI to play Snake Game</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda dicta iusto sit labore libero autem alias minus unde, ducimus impedit dolores ipsam velit error molestias debitis asperiores aut tenetur!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layers">
+                    <h3>Spam Bot Dectection</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda dicta iusto sit labore libero autem alias minus unde, ducimus impedit dolores ipsam velit error molestias debitis asperiores aut tenetur!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layers">
+                    <h3>Train AI to play Snake Game</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda dicta iusto sit labore libero autem alias minus unde, ducimus impedit dolores ipsam velit error molestias debitis asperiores aut tenetur!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>m.bewin512@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+917540021564</p>
+                <div class="social-icons">
+                    <a href="#insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#fb"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#x"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#github"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#leetcode"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/background.png.png" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bewin Made <i class="fa-regular fa-heart"></i> by Bewin Marshel</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5UZQcU4bcaXrIceue_lHI50m31QPM86gXFgnrIYPn2baiAi86dVXOlvweB773dn51uQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById("message")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                message.innerHTML = "Message sent successfully!!"
+                setTimeout(function(){
+                    message.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+</body>
+</html>
