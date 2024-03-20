@@ -6,6 +6,7 @@
     <title>Bewin Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f6dddc6ac4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>  
 <body>
     <div id="header">
@@ -150,7 +151,7 @@
                 <a href="images/background.png.png" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form id="submit-form" action="">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -196,23 +197,24 @@
     }
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5UZQcU4bcaXrIceue_lHI50m31QPM86gXFgnrIYPn2baiAi86dVXOlvweB773dn51uQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const message = document.getElementById("message")
-
-    form.addEventListener('submit', e => {
+    $("#submit-form").submit((e)=>{
         e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                message.innerHTML = "Message sent successfully!!"
-                setTimeout(function(){
-                    message.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxZ2C670VFmwoQ7DccPAOHbQWeCwmy1l4cYgEpWkm2eu5YyEaz75iVJR0Mg88rxq6yV/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
     })
-    </script>
+</script>
 
 </body>
 </html>
